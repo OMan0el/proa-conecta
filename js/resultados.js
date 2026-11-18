@@ -10,14 +10,17 @@ if (respostasSalvas.length === 0) {
     const card = document.createElement("article");
     card.className = "card-destaque";
 
-    card.innerHTML = `
-      <span class="tag-verde">${index === 0 ? "Mais compatível" : "Outra opção"}</span>
+        card.innerHTML = `
+      <div class="tags-linha">
+        <span class="tag-verde">${index === 0 ? "Mais compatível" : "Outra opção"}</span>
+        <span class="tag-neutra">${programa.area}</span>
+      </div>
       <h3>${programa.titulo}</h3>
       <p>${programa.descricao}</p>
-      <a href="${programa.link}" target="_blank" rel="noopener noreferrer" class="btn-principal">Acessar página oficial →</a>
+      <a href="${programa.link}" target="_blank" rel="noopener noreferrer" class="btn-principal">Acessar site oficial →</a>
     `;
     
-    //card montado pra tela
+    //card tela
     listaResultados.appendChild(card);
   });
 }

@@ -46,6 +46,7 @@ const textoPergunta = document.getElementById("texto-pergunta");
 const opcoesContainer = document.getElementById("opcoes-container");
 const barraProgresso = document.getElementById("barra-progresso");
 const contadorPergunta = document.getElementById("contador-pergunta");
+const porcentagemProgresso = document.getElementById("porcentagem-progresso");
 const btnAnterior = document.getElementById("btn-anterior");
 const btnReiniciar = document.getElementById("btn-reiniciar");
 const btnProxima = document.getElementById("btn-proxima");
@@ -56,6 +57,9 @@ function mostrarPergunta() {
   textoPergunta.textContent = atual.texto;
   contadorPergunta.textContent = `Pergunta ${indiceAtual + 1} de ${perguntas.length}`;
   barraProgresso.style.width = `${((indiceAtual + 1) / perguntas.length) * 100}%`;
+    const percentual = Math.round(((indiceAtual + 1) / perguntas.length) * 100);
+  porcentagemProgresso.textContent = `${percentual}%`;
+
 
   // sai botões antigos e entra novos da pergunta atual
   opcoesContainer.innerHTML = "";

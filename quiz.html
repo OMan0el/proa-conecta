@@ -8,26 +8,33 @@
 </head>
 <body>
   <header class="topo">
-    <a href="index.html" class="btn-voltar-topo">← Início</a>
-    <span class="logo">Conecta</span>
+    <div class="topo-conteudo">
+      <a href="index.html" class="link-voltar">← Início</a>
+      <span class="logo">Conecta</span>
+    </div>
   </header>
 
   <main class="container">
-    <div class="progresso-container">
-      <div id="barra-progresso" class="barra-progresso"></div>
-    </div>
-    <p id="contador-pergunta" class="contador">Pergunta 1 de 4</p>
+    <section class="quiz-box">
+      <div class="progresso-topo">
+        <span id="contador-pergunta">Pergunta 1 de 4</span>
+        <span id="porcentagem-progresso" class="progresso-porcentagem">25%</span>
+      </div>
+      <div class="barra-fundo">
+        <div id="barra-progresso" class="barra-preenchimento"></div>
+      </div>
 
-    <section class="card-quiz">
-      <h2 id="texto-pergunta">Carregando pergunta...</h2>
+      <h1 id="texto-pergunta">Carregando pergunta...</h1>
       <div id="opcoes-container" class="opcoes-lista"></div>
-    </section>
 
-    <div class="navegacao-quiz">
-      <button id="btn-anterior" class="btn-secundario">Voltar</button>
-      <button id="btn-reiniciar" class="btn-secundario">Reiniciar</button>
-      <button id="btn-proxima" class="btn-principal">Próxima</button>
-    </div>
+      <div class="quiz-acoes">
+        <button id="btn-anterior" class="btn-secundario">Voltar</button>
+        <div class="quiz-acoes-direita">
+          <button id="btn-reiniciar" class="btn-secundario">Reiniciar</button>
+          <button id="btn-proxima" class="btn-principal">Próxima</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="js/quiz.js"></script>

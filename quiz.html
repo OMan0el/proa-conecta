@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz — Conecta</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <a href="index.html" class="btn-voltar-topo">← Início</a>
+    <span class="logo">Conecta</span>
+  </header>
+
+  <main class="container">
+    <div class="progresso-container">
+      <div id="barra-progresso" class="barra-progresso"></div>
+    </div>
+    <p id="contador-pergunta" class="contador">Pergunta 1 de 4</p>
+
+    <section class="card-quiz">
+      <h2 id="texto-pergunta">Carregando pergunta...</h2>
+      <div id="opcoes-container" class="opcoes-lista"></div>
+    </section>
+
+    <div class="navegacao-quiz">
+      <button id="btn-anterior" class="btn-secundario">Voltar</button>
+      <button id="btn-reiniciar" class="btn-secundario">Reiniciar</button>
+      <button id="btn-proxima" class="btn-principal">Próxima</button>
+    </div>
+  </main>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

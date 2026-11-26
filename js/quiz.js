@@ -1,4 +1,3 @@
-// perguntas do quiz
 const perguntas = [
   {
     tipo: "numero",
@@ -56,7 +55,6 @@ const perguntas = [
   }
 ];
 
-// controla a pergunta atual e guarda as respostas
 let indiceAtual = 0;
 let respostasUsuario = [null, null, null, [], null];
 
@@ -76,14 +74,13 @@ const btnAnterior = document.getElementById("btn-anterior");
 const btnProxima = document.getElementById("btn-proxima");
 const btnReiniciar = document.getElementById("btn-reiniciar");
 
-// troca a tela de introdução pelas perguntas
+// troca tela de introdução pelas perguntas
 btnComecar.addEventListener("click", () => {
   telaIntro.classList.add("oculto");
   telaPerguntas.classList.remove("oculto");
   mostrarPergunta();
 });
 
-// monta a pergunta atual e a barra de progresso
 function mostrarPergunta() {
   const atual = perguntas[indiceAtual];
   const numero = indiceAtual + 1;
@@ -114,7 +111,7 @@ function mostrarPergunta() {
       respostasUsuario[indiceAtual] = e.target.value;
     });
   } else {
-    // botões de opção única ou múltipla
+
     const grid = document.createElement("div");
     grid.className = "opcoes-grid";
 
@@ -163,7 +160,6 @@ function mostrarPergunta() {
   btnProxima.textContent = indiceAtual === total - 1 ? "Ver resultado →" : "Continuar →";
 }
 
-// botão voltar
 btnAnterior.addEventListener("click", () => {
   if (indiceAtual > 0) {
     indiceAtual--;
@@ -174,14 +170,12 @@ btnAnterior.addEventListener("click", () => {
   }
 });
 
-// botão reiniciar
 btnReiniciar.addEventListener("click", () => {
   indiceAtual = 0;
   respostasUsuario = [null, null, null, [], null];
   mostrarPergunta();
 });
 
-// valida a resposta e avança ou salva na sessão
 btnProxima.addEventListener("click", () => {
   const atual = perguntas[indiceAtual];
   const resp = respostasUsuario[indiceAtual];

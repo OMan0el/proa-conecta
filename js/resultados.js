@@ -4,15 +4,13 @@ const botoesFiltro = document.querySelectorAll(".filtro-btn");
 const btnRefazer = document.getElementById("btn-refazer");
 const avisoSemQuiz = document.getElementById("aviso-sem-quiz");
 
-// pega as respostas salvas na sessão
 const respostasSalvas = JSON.parse(sessionStorage.getItem("respostasConecta"));
 
-// mostra o aviso se alguém abrir a página direto sem fazer o quiz
 if (!respostasSalvas && avisoSemQuiz) {
   avisoSemQuiz.classList.remove("oculto");
 }
 
-// exemplos temporários
+// exemplos
 const exemplosTemporarios = [
   {
     nome: "Instituição Exemplo 1",

@@ -1,7 +1,7 @@
-// Parte do Caio: colocar aqui a lista oficial dos cursos e instituições
+// colocar a lista oficial dos cursos e instituições
 
 const catalogoProgramas = [
-  // Exemplo de como preencher cada programa:
+  // exemplo pra preencher cada programa:
   // {
   //   nome: "Nome do Programa",
   //   subtitulo: "Área do curso",

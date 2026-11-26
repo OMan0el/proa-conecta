@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<!-- cabeçalho -->
   <header class="topo">
     <div class="topo-conteudo">
       <a href="index.html" class="logo">
@@ -30,14 +30,15 @@
   </header>
 
   <main class="container">
-
+    <!-- aviso quiz não respondido -->
     <section id="aviso-sem-quiz" class="card-branco aviso-sem-respostas oculto">
       <strong>Você ainda não respondeu ao quiz!</strong>
       <p>Responda às 5 perguntas rápidas para receber recomendações personalizadas para o seu perfil.</p>
       <a href="quiz.html" class="btn-principal">Responder quiz agora →</a>
     </section>
 
-    <section class="card-branco grid-2">
+    <!-- perfil do usuário -->
+    <section class="card-b2aZranco grid-2">
       <div>
         <span class="tag-azul">Seu perfil identificado</span>
         <h1 class="perfil-titulo">Explorador(a) de Tecnologia & Inovação</h1>
@@ -62,6 +63,7 @@
       </div>
     </section>
 
+    <!-- filtros das recomendações -->
     <section id="lista-recomendacoes" class="filtros-linha">
       <div class="secao-titulo secao-titulo-sem-margem">
         <span class="tag-azul espaco-tag">Perfil: Explorador(a) de Tecnologia & Inovação</span>
@@ -77,7 +79,7 @@
       </div>
     </section>
 
-    <!-- cards preenchidos pelo js -->
+    <!-- cards pelo js -->
     <div id="lista-resultados" class="grid-3"></div>
   </main>
 
@@ -96,7 +98,7 @@
     </div>
   </footer>
 
-
+  <!-- mostrando recomendações -->
   <script src="js/programas.js"></script>
   <script src="js/recomendacao.js"></script>
   <script src="js/resultados.js"></script>

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+  <!-- cabeçalho -->
   <header class="topo">
     <div class="topo-conteudo">
       <a href="index.html" class="logo">
@@ -30,7 +30,7 @@
   </header>
 
   <main class="container">
-    
+<!-- início do quiz -->    
     <section id="tela-intro-quiz" class="card-branco quiz-box">
       <div class="grid-2 grid-2-compacto">
         <div>
@@ -62,7 +62,6 @@
             </div>
           </div>
 
-
           <div class="tags-linha">
             <button id="btn-comecar-quiz" class="btn-principal">Começar agora →</button>
             <a href="index.html" class="btn-secundario">Voltar ao início</a>
@@ -71,6 +70,7 @@
       </div>
     </section>
 
+    <!-- perguntas -->
     <section id="tela-perguntas" class="card-branco quiz-box oculto">
   
       <div class="progresso-topo">
@@ -81,13 +81,13 @@
         <div id="barra-progresso" class="barra-preenchimento"></div>
       </div>
 
-      <!-- pergunta e opções preenchidas pelo js -->
+      <!-- pergunta e opções -->
       <h1 id="texto-pergunta" class="pergunta-titulo">Carregando pergunta...</h1>
       <p id="subtitulo-pergunta" class="pergunta-subtitulo"></p>
 
       <div id="opcoes-container"></div>
 
-    
+    <!-- botôes do quiz -->
       <div class="quiz-acoes">
         <button id="btn-anterior" class="btn-secundario">← Voltar</button>
         <div class="tags-linha">

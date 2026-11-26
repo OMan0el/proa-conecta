@@ -55,6 +55,7 @@ const perguntas = [
   }
 ];
 
+// pergunta e respostas salvas
 let indiceAtual = 0;
 let respostasUsuario = [null, null, null, [], null];
 
@@ -81,6 +82,7 @@ btnComecar.addEventListener("click", () => {
   mostrarPergunta();
 });
 
+// monta pergunta na tela
 function mostrarPergunta() {
   const atual = perguntas[indiceAtual];
   const numero = indiceAtual + 1;
@@ -95,7 +97,7 @@ function mostrarPergunta() {
   subtituloPergunta.textContent = atual.subtitulo;
   opcoesContainer.innerHTML = "";
 
-  // campo de número para a idade
+  // campo de número idade
   if (atual.tipo === "numero") {
     const div = document.createElement("div");
     div.className = "campo-idade-box";
@@ -111,7 +113,7 @@ function mostrarPergunta() {
       respostasUsuario[indiceAtual] = e.target.value;
     });
   } else {
-
+// botões das opções
     const grid = document.createElement("div");
     grid.className = "opcoes-grid";
 
@@ -159,7 +161,7 @@ function mostrarPergunta() {
 
   btnProxima.textContent = indiceAtual === total - 1 ? "Ver resultado →" : "Continuar →";
 }
-
+// botão voltar
 btnAnterior.addEventListener("click", () => {
   if (indiceAtual > 0) {
     indiceAtual--;
@@ -175,7 +177,7 @@ btnReiniciar.addEventListener("click", () => {
   respostasUsuario = [null, null, null, [], null];
   mostrarPergunta();
 });
-
+// continuar e salvar respostas
 btnProxima.addEventListener("click", () => {
   const atual = perguntas[indiceAtual];
   const resp = respostasUsuario[indiceAtual];

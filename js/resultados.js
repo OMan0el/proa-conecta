@@ -4,6 +4,7 @@ const botoesFiltro = document.querySelectorAll(".filtro-btn");
 const btnRefazer = document.getElementById("btn-refazer");
 const avisoSemQuiz = document.getElementById("aviso-sem-quiz");
 
+// lê respostas salvas e mostra aviso se abirir direto
 const respostasSalvas = JSON.parse(sessionStorage.getItem("respostasConecta"));
 
 if (!respostasSalvas && avisoSemQuiz) {
@@ -79,7 +80,7 @@ function renderizarCards(filtro = "todas") {
     listaResultados.appendChild(card);
   });
 }
-
+// clique botões de filtro
 botoesFiltro.forEach((botao) => {
   botao.addEventListener("click", () => {
     botoesFiltro.forEach((b) => b.classList.remove("ativo"));
@@ -94,4 +95,5 @@ if (btnRefazer) {
   });
 }
 
+// carrega cards ao abrir a página
 renderizarCards("todas");

@@ -80,7 +80,6 @@ function renderizarCards(filtro = "todas") {
   });
 }
 
-// clique nos botões de filtro
 botoesFiltro.forEach((botao) => {
   botao.addEventListener("click", () => {
     botoesFiltro.forEach((b) => b.classList.remove("ativo"));

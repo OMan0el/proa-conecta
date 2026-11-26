@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastre-se — CapiVerso</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+  <header class="topo">
+    <div class="topo-conteudo">
+      <a href="index.html" class="logo">
+        <img src="assets/images/capivara-logo.png" alt="Logo CapiVerso">
+        <div>
+          CapiVerso
+          <span>Instituto PROA</span>
+        </div>
+      </a>
+
+      <a href="index.html" class="btn-secundario">← Voltar ao início</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- formulário de cadastro -->
+    <section class="card-branco auth-box">
+      <div class="auth-header">
+        <img src="assets/images/capivara-logo.png" alt="Mascote CapiVerso" class="sucesso-icone">
+        <h1>Crie sua conta</h1>
+        <p>Cadastre-se gratuitamente para começar sua jornada no CapiVerso.</p>
+      </div>
+
+      <form action="conta-criada.html">
+        <div class="form-grupo">
+          <label for="nome-cadastro">Nome completo</label>
+          <input type="text" id="nome-cadastro" class="form-input" placeholder="Ex: Mariana Oliveira" required>
+        </div>
+
+        <div class="form-grupo">
+          <label for="email-cadastro">E-mail</label>
+          <input type="email" id="email-cadastro" class="form-input" placeholder="mariana.oliveira@email.com" required>
+        </div>
+
+        <div class="form-grupo">
+          <label for="senha-cadastro">Criar senha</label>
+          <input type="password" id="senha-cadastro" class="form-input" placeholder="Crie uma senha" required>
+        </div>
+
+        <button type="submit" class="btn-principal btn-largura-total">Criar conta →</button>
+      </form>
+
+      <p class="auth-rodape-texto">
+        Já tem uma conta? <a href="login.html">Entrar</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div>
+        <strong>CapiVerso · Instituto PROA</strong>
+        <span class="rodape-subtexto">Conectando jovens a projetos, educação e oportunidades reais.</span>
+      </div>
+      <div class="rodape-links">
+        <a href="index.html">Início</a>
+        <a href="quiz.html">Introdução ao quiz</a>
+        <a href="resultados.html">Recomendações</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

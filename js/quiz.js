@@ -21,9 +21,9 @@ const perguntas = [
     subtitulo: "Escolha a área que mais desperta seu interesse. Vamos encontrar cursos gratuitos que combinem com você!",
     opcoes: [
       { titulo: "Tecnologia", descricao: "Programação, informática e inovação.", valor: "tecnologia" },
-      { titulo: "Já explorei por conta própria", descricao: "Assisti vídeos, tutoriais ou testei ferramentas", valor: "explorador" },
+      { titulo: "Design e Criatividade", descricao: "Design gráfico, edição de vídeo e interfaces.", valor: "design" },
       { titulo: "Administração e Negócios", descricao: "Gestão, empreendedorismo e finanças.", valor: "gestao" },
-      { titulo: "Já possuo experiência na área", descricao: "Desenvolvi projetos, fiz estágio ou já atuei", valor: "experiente" }
+      { titulo: "Marketing Digital e Comunicação", descricao: "Redes Sociais, vendas e produção de conteúdos", valor: "marketing" }
     ]
   },
   {

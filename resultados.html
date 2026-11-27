@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados — CapiVerso</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- cabeçalho -->
+  <header class="topo">
+    <div class="topo-conteudo">
+      <a href="index.html" class="logo">
+        <img src="assets/images/capivara-logo.png" alt="Logo CapiVerso">
+        <div>
+          CapiVerso
+          <span>Instituto PROA</span>
+        </div>
+      </a>
+
+      <nav class="menu-nav">
+        <a href="index.html">Início</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="resultados.html" class="ativo">Recomendações</a>
+        <a href="index.html#sobre">Sobre o projeto</a>
+      </nav>
+
+      <a href="quiz.html" class="btn-principal">Refazer quiz</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- aviso quiz não respondido -->
+    <section id="aviso-sem-quiz" class="card-branco aviso-sem-respostas oculto">
+      <strong>Você ainda não respondeu ao quiz!</strong>
+      <p>Responda às 5 perguntas rápidas para receber recomendações personalizadas para o seu perfil.</p>
+      <a href="quiz.html" class="btn-principal">Responder quiz agora →</a>
+    </section>
+
+    <!-- perfil do usuário -->
+    <section class="card-branco grid-2">
+      <div>
+        <span class="tag-azul">Seu perfil identificado</span>
+        <h1 class="perfil-titulo">Explorador(a) de Tecnologia & Inovação</h1>
+        <p class="perfil-descricao">
+          Suas respostas mostram afinidade com lógica, criação digital e resolução de problemas usando tecnologia. Esse é um ótimo momento para começar em áreas como Desenvolvimento Web, UI/UX Design ou Dados por meio de cursos gratuitos.
+        </p>
+
+        <div class="tags-linha espaco-baixo">
+          <span class="tag-azul">Desenvolvimento Web</span>
+          <span class="tag-azul">Lógica e Programação</span>
+          <span class="tag-azul">Design de Interfaces</span>
+        </div>
+
+        <div class="tags-linha">
+          <a href="#lista-recomendacoes" class="btn-principal">Ver recomendações ↓</a>
+          <a id="btn-refazer" href="quiz.html" class="btn-secundario">Refazer quiz</a>
+        </div>
+      </div>
+
+      <div>
+        <img src="assets/images/capivara-acenando.png" alt="Capivara comemorando resultado">
+      </div>
+    </section>
+
+    <!-- filtros das recomendações -->
+    <section id="lista-recomendacoes" class="filtros-linha">
+      <div class="secao-titulo secao-titulo-sem-margem">
+        <span class="tag-azul espaco-tag">Perfil: Explorador(a) de Tecnologia & Inovação</span>
+        <h2>Instituições, cursos e projetos de tecnologia para você</h2>
+        <p>Selecionamos iniciativas gratuitas e confiáveis na área de tecnologia alinhadas ao seu momento atual para você aprender, praticar e dar o próximo passo.</p>
+      </div>
+
+      <div class="filtros-grupo">
+        <button class="filtro-btn ativo" data-filtro="todas">Todas</button>
+        <button class="filtro-btn" data-filtro="Formação Tech">Formação Tech</button>
+        <button class="filtro-btn" data-filtro="Primeiro Emprego">Primeiro Emprego</button>
+        <button class="filtro-btn" data-filtro="Comunidades">Comunidades</button>
+      </div>
+    </section>
+
+    <!-- cards pelo js -->
+    <div id="lista-resultados" class="grid-3"></div>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div>
+        <strong>CapiVerso · Instituto PROA</strong>
+        <span class="rodape-subtexto">Conectando jovens a projetos, educação e oportunidades reais.</span>
+      </div>
+      <div class="rodape-links">
+        <a href="index.html">Início</a>
+        <a href="quiz.html">Introdução ao quiz</a>
+        <a href="resultados.html">Recomendações</a>
+        <a href="index.html#sobre">Sobre o projeto</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- mostrando recomendações -->
+  <script src="js/programas.js"></script>
+  <script src="js/recomendacao.js"></script>
+  <script src="js/resultados.js"></script>
+</body>
+</html>
+
+

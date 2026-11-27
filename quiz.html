@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz — CapiVerso</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- cabeçalho -->
+  <header class="topo">
+    <div class="topo-conteudo">
+      <a href="index.html" class="logo">
+        <img src="assets/images/capivara-logo.png" alt="Logo CapiVerso">
+        <div>
+          CapiVerso
+          <span>Instituto PROA</span>
+        </div>
+      </a>
+
+      <nav class="menu-nav">
+        <a href="index.html">Início</a>
+        <a href="quiz.html" class="ativo">Quiz</a>
+        <a href="resultados.html">Recomendações</a>
+        <a href="index.html#sobre">Sobre o projeto</a>
+      </nav>
+
+      <a href="index.html" class="btn-secundario">← Voltar ao início</a>
+    </div>
+  </header>
+
+  <main class="container">
+<!-- início do quiz -->    
+    <section id="tela-intro-quiz" class="card-branco quiz-box">
+      <div class="grid-2 grid-2-compacto">
+        <div>
+          <img src="assets/images/capivara-lendo.png" alt="Capivara lendo">
+        </div>
+
+        <div>
+          <span class="tag-azul">Leva menos de 2 minutos</span>
+          <h1 class="intro-titulo">Descubra qual caminho na tecnologia combina com você!</h1>
+          <p class="intro-descricao">
+            Não existem respostas certas ou erradas. O quiz vai identificar seus interesses para indicar instituições, cursos e projetos de tecnologia que fazem sentido para você.
+          </p>
+
+                    <!-- mini-cards -->
+          <div class="mini-infos-grid">
+            <div class="mini-info-card">
+              <span class="mini-info-titulo">5 perguntas</span>
+              <span class="mini-info-texto">Uma por vez, sem pressa</span>
+            </div>
+
+            <div class="mini-info-card">
+              <span class="mini-info-titulo">Escolha livre</span>
+              <span class="mini-info-texto">Você pode voltar quando quiser</span>
+            </div>
+
+            <div class="mini-info-card">
+              <span class="mini-info-titulo">Guia real</span>
+              <span class="mini-info-texto">Links para iniciativas de tecnologia</span>
+            </div>
+          </div>
+
+          <div class="tags-linha">
+            <button id="btn-comecar-quiz" class="btn-principal">Começar agora →</button>
+            <a href="index.html" class="btn-secundario">Voltar ao início</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- perguntas -->
+    <section id="tela-perguntas" class="card-branco quiz-box oculto">
+  
+      <div class="progresso-topo">
+        <span id="contador-pergunta" class="tag-azul">Pergunta 1 de 5</span>
+        <span id="porcentagem-progresso">20%</span>
+      </div>
+      <div class="barra-fundo">
+        <div id="barra-progresso" class="barra-preenchimento"></div>
+      </div>
+
+      <!-- pergunta e opções -->
+      <h1 id="texto-pergunta" class="pergunta-titulo">Carregando pergunta...</h1>
+      <p id="subtitulo-pergunta" class="pergunta-subtitulo"></p>
+
+      <div id="opcoes-container"></div>
+
+    <!-- botôes do quiz -->
+      <div class="quiz-acoes">
+        <button id="btn-anterior" class="btn-secundario">← Voltar</button>
+        <div class="tags-linha">
+          <button id="btn-reiniciar" class="btn-secundario">Reiniciar</button>
+          <button id="btn-proxima" class="btn-principal">Continuar →</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+      <div>
+        <strong>CapiVerso · Instituto PROA</strong>
+        <span class="rodape-subtexto">Conectando jovens a projetos, educação e oportunidades reais.</span>
+      </div>
+      <div class="rodape-links">
+        <a href="index.html">Início</a>
+        <a href="quiz.html">Introdução ao quiz</a>
+        <a href="resultados.html">Recomendações</a>
+        <a href="index.html#sobre">Sobre o projeto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
+
